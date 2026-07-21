@@ -2,13 +2,11 @@
   position: fixed;
   top: 0;
   right: -100%;
-  width: 160px;
-  max-width: 300px;
+  width: 100%;
+  /* max-width: 300px; */
   height: 100vh;
   z-index: 200;
-  background-color: #f8f9fa;
-  border-top-left-radius: 40px;
-  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-color);
   transition: right 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 
   display: flex;
@@ -34,6 +32,9 @@
 }
 
 .mm_close-btn {
+  position:absolute;
+  top: 20px;
+  right: 20px;
   background: none;
   border: none;
   padding: 0;
@@ -48,7 +49,7 @@
     transform: rotate(90deg);
 
     .mm_btn-close-icon {
-      fill: var(--accent-color); /* Иконка станет бирюзовой */
+      fill: var(--accent-color);
       stroke: var(--accent-color);
     }
   }
@@ -69,7 +70,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 52px;
+  gap: 50px;
   width: 100%;
   margin-top: auto;
   margin-bottom: auto;
@@ -82,9 +83,9 @@
 
 .mm_item-nav-link {
   display: inline-block;
-  font-family: var(--font-jakarta);
-  font-size: 17px;
-  font-weight: 800;
+  font-family: var(--font-monrope);
+  font-size: 18px;
+  font-weight: 400;
   color: var(--black-color);
   transition: color 0.3s ease, transform 0.3s ease;
 

@@ -4,8 +4,9 @@
   left: 0;
   width: 100%;
   z-index: 100;
-  background-color: var(--black-color);
+  background-color: var(--bg-color);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 8px 0;
 
 
 }
@@ -14,13 +15,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
 
   @media only screen and (min-width: 1440px) {
-    height: 80px;
+      justify-content: flex-start;
+      gap: 200px
   }
 }
+.hdr_logo-link {
+  width: 89px;
+  height: 76px;
 
+  @media only screen and (min-width: 1440px) {
+    width: 138px;
+      height: 112px;
+    }
+}
 
 .hdr_logo-img {
   display: block;
@@ -58,7 +67,7 @@
 .hdr_btn-burger-icon {
   width: 100%;
   height: 100%;
-  fill: var(--white-color);
+  fill: var(--black-color);
   transition: fill 0.3s ease;
 }
 
@@ -80,10 +89,11 @@
 }
 
 .hdr_item-nav-link {
-  font-family: var(--font-jakarta);
+  font-family: var(--font-manrope);
   font-size: 18px;
-  font-weight: 800;
-  color:var(--white-color);
+  font-weight: 400;
+  line-height: 1.3;
+  color:var(--black-color);
   transition: color 0.3s ease, transform 0.3s ease;
   display: inline-block;
 

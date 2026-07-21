@@ -85,6 +85,6 @@ html {
 
 @media screen and (min-width: 1440px) {
   html {
-    scroll-padding-top: 50px;
+    scroll-padding-top: 128px;
   }
 }

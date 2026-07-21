@@ -1,9 +1,9 @@
 .hero {
   position: relative;
-  background-color: var(--black-color);
   padding-top: 15px;
   padding-bottom: 24px;
   overflow: hidden;
+
 
   @media only screen and (min-width: 1440px) {
     padding-top: 100px;
@@ -21,7 +21,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 86px;
+    gap: 40px;
   }
 }
 
@@ -30,40 +30,46 @@
   margin-bottom: 20px;
 
   @media only screen and (min-width: 1440px) {
-    max-width: 544px;
+    max-width: 892px;
     flex-shrink: 0;
     margin-bottom: 0;
   }
 }
 
 .hero__title {
-  font-family: var(--font-jakarta);
-  font-size: 32px;
-  font-weight: 800;
-  letter-spacing: -0.05em;
-  color: var(--white-color);
-  margin-bottom: 30px;
+  font-family: var(--font-manrope);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.33;
+  color: var(--black-color);
+  text-align: center;
+  margin-bottom: 20px;
 
   @media only screen and (min-width: 1440px) {
     font-size: 60px;
-    letter-spacing: -0.03em;
+    line-height: 1.25;
     margin-bottom: 40px;
   }
 }
 
-.hero__title-accent {
-  color: var(--accent-color);
+.hero__descr-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media only screen and (min-width: 1440px) {
+      gap: 24px;
+    }
 }
 
 .hero__text {
-  font-size: 14px;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.7);
-  max-width: 300px;
+  font-size: 13px;
+  line-height: 1.28;
+  /* max-width: 300px; */
 
   @media only screen and (min-width: 1440px) {
-    font-size: 17px;
-    max-width: 100%;
+    font-size: 20px;
+    /* max-width: 100%; */
   }
 }
 
@@ -80,36 +86,17 @@
   }
 }
 
-.hero__glow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 250px;
-  height: 250px;
-  background-color: #334c82;
-  border-radius: 50%;
-  filter: blur(80px);
-  z-index: 1;
-  pointer-events: none;
-  will-change: transform;
-
-  @media only screen and (min-width: 1440px) {
-    width: 385px;
-    height: 385px;
-    filter: blur(150px);
-  }
-}
 
 .hero__figure {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 385px;
+  max-width: 190px;
   margin: 0;
 
   @media only screen and (min-width: 1440px) {
-    max-width: 530px;
+    max-width: 356px;
+    width: 356px;
   }
 }
 

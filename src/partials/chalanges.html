@@ -1,80 +1,50 @@
-<article class="rev" id="reviews">
-  <div class="rev__glow"></div>
-  <div class="container">
-    <h2 class="rev__title">What Players Are Saying</h2>
-
-    <div class="rev__slider">
-      <div class="rev__wrapper" data-slider-track>
-        <div class="rev__item" data-slider-slide>
-          <div class="rev__icon-box">
-            <svg class="rev__icon">
-              <use href="/sprite.svg#icon-paragraph"></use>
-            </svg>
-          </div>
-          <p class="rev__text">
-            "Brandfield Pro captures the complexity of running a branding agency
-            without overwhelming you. I love how every campaign feels like a
-            puzzle where creativity and strategy meet."
-          </p>
-          <span class="rev__author">Alex R.</span>
-        </div>
-
-        <div class="rev__item" data-slider-slide>
-          <div class="rev__icon-box">
-            <svg class="rev__icon">
-              <use href="/sprite.svg#icon-paragraph"></use>
-            </svg>
-          </div>
-          <p class="rev__text">
-            "This game made me think differently about branding, and the
-            competitive aspect keeps me coming back."
-          </p>
-          <span class="rev__author">Sophia T.</span>
-        </div>
-
-        <div class="rev__item" data-slider-slide>
-          <div class="rev__icon-box">
-            <svg class="rev__icon">
-              <use href="/sprite.svg#icon-paragraph"></use>
-            </svg>
-          </div>
-          <p class="rev__text">
-            "Managing my team and seeing the impact of my decisions in a
-            simulated market is both challenging and rewarding."
-          </p>
-          <span class="rev__author">Jamal L.</span>
-        </div>
+<article class="challenges" id="challenges">
+  <div class="chl_container container">
+    <div class="chl_content">
+      <h2 class="chl__title">Creative Challenges</h2>
+      <div class="chl_decr-wraper">
+        <p class="chl_text">
+          BrandMaster isn’t just about puzzles—it’s about creativity under
+          pressure. Weekly branding contests pit you against players worldwide.
+          Use your puzzle skills and design flair to outmatch others and earn
+          exclusive rewards.
+        </p>
+        <p class="chl_text">
+          Your creations live in a virtual showroom, where others can view and
+          draw inspiration from your work. Challenge yourself to build bold
+          logos, experiment with styles, and push the boundaries of casual
+          gaming creativity.
+        </p>
       </div>
+    </div>
 
-      <div class="rev__controls">
-        <button
-          class="rev__btn"
-          type="button"
-          data-slider-prev
-          aria-label="Previous slide"
-        >
-          <svg class="rev__btn-icon">
-            <use href="/sprite.svg#arow-back"></use>
-          </svg>
-        </button>
-
-        <div class="rev__pagination">
-          <span class="rev__dot active" data-slider-dot data-slide="0"></span>
-          <span class="rev__dot" data-slider-dot data-slide="1"></span>
-          <span class="rev__dot" data-slider-dot data-slide="2"></span>
-        </div>
-
-        <button
-          class="rev__btn"
-          type="button"
-          data-slider-next
-          aria-label="Next slide"
-        >
-          <svg class="rev__btn-icon">
-            <use href="/sprite.svg#arow-forward"></use>
-          </svg>
-        </button>
-      </div>
+    <div class="chl__visual">
+      <figure class="chl__figure">
+        <picture class="chl__picture">
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              /img/challenge/challenge.png,
+              /img/challenge/challenge@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            srcset="
+              /img/challenge/challenge-mob.png    1x,
+              /img/challenge/challenge-mob@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="chl__img"
+            src="/img/challenge/challenge-mob.png"
+            alt="Creative Challenges "
+            width="356"
+            height="636"
+          />
+        </picture>
+      </figure>
     </div>
   </div>
 </article>
